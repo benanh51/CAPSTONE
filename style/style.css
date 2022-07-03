@@ -245,8 +245,8 @@ input:checked+.qFaHeader_mode i.gg-moon {
     transition: 0.5s all;
 }
 
-#qFaNav .nav-item a:hover,
-#qFaNav .nav-item .active 
+#qFaNav .navbar-nav .nav-item a:hover,
+#qFaNav .navbar-nav .nav-item .active 
 {
     color: #fb811e;
 }
@@ -381,7 +381,7 @@ input:checked+.qFaHeader_mode i.gg-moon {
     background-color: #fff;
 }
 
-.dark#myBody #qFaNav a{
+.dark#myBody .nav-item a{
     color: #060606;
 }
 
