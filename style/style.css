@@ -24,20 +24,11 @@ h4 {
     font-family: 'Volkhov', serif;
     margin: 0;
     padding: 0;
-    font-weight: 400;
-    line-height: 28px;
 }
 
-h1 {
-    font-size: 2em;
-}
-
-p {
+p{
     margin: 0;
     padding: 0;
-    color: #b7b7b7;
-    font-size: 17px;
-    line-height: 26px;
 }
 
 span {
@@ -52,11 +43,6 @@ input {
 input[type="checkbox"] {
     box-sizing: border-box;
     padding: 0;
-}
-
-.btn:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgb(46 202 139 / 25%);
 }
 
 .btn-style {
@@ -77,6 +63,11 @@ input[type="checkbox"] {
     color: #ffffff;
 }
 
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(46 202 139 / 25%);
+}
+
 .fixed-top {
     position: fixed;
     top: 0;
@@ -95,6 +86,21 @@ input[type="checkbox"] {
     align-items: center;
 }
 
+.qFaHeader.nav-fixed {
+    padding: 0px;
+    border-bottom: none;
+    z-index: 99 !important;
+    background-color: #222222;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+    height: 70px;
+}
+
+.qFaHeader h1 {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 28px;
+}
+
 .qFaHeader .container,
 .qFaHeader .container-fluid {
     width: 100%;
@@ -108,21 +114,25 @@ input[type="checkbox"] {
     padding: 0;
 }
 
-.qFaHeader .navbar .navbar-brand {
+.qFaHeader .navbar-brand {
     font-size: 32px;
     color: #fff;
     padding: 0px;
     position: relative;
 }
 
-.qFaHeader .navbar .navbar-brand i {
+.qFaHeader .navbar-brand i {
     position: absolute;
     top: -10px;
     left: 55px;
     font-size: 20px;
 }
 
-.qFaHeader .navbar .qFaHeader_search {
+.nav-fixed .navbar .navbar-brand{
+    color: #fb811e;
+}
+
+.qFaHeader .qFaHeader_search {
     margin: 0 10px 0 10px;
 }
 
@@ -135,6 +145,10 @@ input[type="checkbox"] {
     border-radius: 10em;
     transition: all .5s;
     cursor: pointer;
+}
+
+.qFaHeader_search input[type=search]:hover {
+    background-color: #fff;
 }
 
 .qFaHeader_search input[type=search]:focus {
@@ -256,6 +270,7 @@ input:checked+.qFaHeader_mode i.gg-moon {
     font-size: 70px;
     font-weight: bold;
     margin-left: -0.5em;
+    line-height: 28px;
 }
 
 .qFaCarousel_body h3 {
@@ -265,11 +280,19 @@ input:checked+.qFaHeader_mode i.gg-moon {
 }
 
 .qFaCarousel_text {
+    margin: 0;
+    padding: 0;
+    color: #b7b7b7;
     font-size: 16px;
+    line-height: 26px;
 }
 
 .qFaCarousel_right {
     position: relative;
+}
+
+#qFaCaptions .carousel-inner{
+    border-bottom-left-radius: 20px;
 }
 
 .qFaCarousel_image1,
@@ -302,14 +325,22 @@ input:checked+.qFaHeader_mode i.gg-moon {
     left: auto;
 }
 
-#qFaCaptions .carousel-caption h4 ,
+#qFaCaptions .carousel-caption h4{
+    color: #fff;
+    font-weight: 400;
+    line-height: 28px;
+}
+
 #qFaCaptions .carousel-caption p {
     color: #fff;
+    line-height: 26px;
+    font-size: 17px;
 }
 
 
+
 #qFaCaptions .carousel-indicators {
-    bottom: 35px;
+    bottom: 27px;
     margin: 0 auto;
 }
 
@@ -334,21 +365,40 @@ input:checked+.qFaHeader_mode i.gg-moon {
     background-color: #fff;
 }
 
-.dark#qFaNav{
+.dark#myBody .nav-fixed{
     background-color: #fff;
 }
 
-.dark#qFaNav a,
-.dark#qFaslogan{
+.dark#myBody .nav-fixed .qFaHeader_mode{
     color: #060606;
 }
 
-.dark#qFafarm {
+.dark#myBody .nav-fixed .navbar-toggler{
+    color: #060606;
+}
+
+.dark#myBody #qFaNav{
+    background-color: #fff;
+}
+
+.dark#myBody #qFaNav a{
+    color: #060606;
+}
+
+.dark#myBody .qFaCarousel_body h3{
+    color: #060606;
+}
+
+.dark#myBody .qFaCarousel h2{
     color: #f4f4f4;
 }
 
-.dark#qFaheaderText{
+.dark#myBody .qFaCarousel_text{
     color: #707070;
+}
+
+.dark#myBody .qFaCarousel_content{
+    background-color: #fff;
 }
 
 /* responsive */
@@ -372,8 +422,12 @@ input:checked+.qFaHeader_mode i.gg-moon {
         color: #fb811e;
     }
 
-    #qFaCaptions .carousel-inner{
-        border-bottom-left-radius: 20px;
+    .dark#myBody .nav-fixed .navbar .navbar-brand {
+        color: #060606;
+    }
+
+    .nav-fixed .navbar .navbar-brand{
+        color: #fff;
     }
 
     .qFaCarousel_left {
@@ -381,7 +435,7 @@ input:checked+.qFaHeader_mode i.gg-moon {
         padding: 0 15px;
     }
 
-    .qFaCarousel_content {
+    #myBody .qFaCarousel .qFaCarousel_content {
         background-color: transparent;
         border-radius: 0;
         padding: 0;
