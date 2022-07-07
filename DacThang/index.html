@@ -223,14 +223,14 @@
     <section class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-4 footer__contact">
+                <div class="col-lg-4  footer__contact">
                     <h3>FIND US</h3>
                     <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
                     <p>Phone: <a href="tel:+12 23456790">+12 23456790</a></p>
                     <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
                     <p>Fax: <a href="tel:++ 11 367 21890">+ 11 367 21890</a></p>
                 </div>
-                <div class="col-4 footer__copyright">
+                <div class="col-lg-4 order-lg-1 order-3 footer__copyright">
                     <h4 class="footer__logo">
                         <a href="#Home">Farmstead
                             <i class="fa fa-leaf" aria-hidden="true"></i>
@@ -242,7 +242,7 @@
                         WordPress Theme by <a href="https://w3layouts.com/">W3Layouts. </a>
                     </p>
                 </div>
-                <div class="col-4 footer__letter">
+                <div class="col-lg-4 col-md-7 order-lg-3 order-1 footer__letter">
                     <h3>NEWLETTER</h3>
                     <p>Subscribe to our mailing list and get updates to your email inbox.</p>
                     <form action="" class="footer__form">
@@ -271,6 +271,16 @@
             </div>
         </div>
     </section>
+
+    <!-- BackToTop -->
+    <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
+        <span class="fa fa-level-up" aria-hidden="true"></span>
+    </button>
+
+
+
+
+
     <!-- JS -->
 
 
@@ -331,6 +341,28 @@
             }
         })
     </script>
+
+    <!-- BackToTop -->
+    <script>
+       
+        window.onscroll = function () {
+          scrollFunction()
+        };
+      
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+          } else {
+            document.getElementById("movetop").style.display = "none";
+          }
+        }
+      
+     
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
 
 </body>
 
