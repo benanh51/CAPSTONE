@@ -145,6 +145,7 @@ input[type="checkbox"] {
     border-radius: 10em;
     transition: all .5s;
     cursor: pointer;
+    outline: none;
 }
 
 .qFaHeader_search input[type=search]:hover {
@@ -418,6 +419,15 @@ input:checked+.qFaHeader_mode i.gg-moon {
 @media (min-width: 768px) {
     .qFaHeader .navbar .navbar-brand {
         color: #fb811e;
+        transition: all .5s;
+    }
+
+    .qFaHeader .navbar a.navbar-brand:hover {
+        color: #fdfffc;
+    }
+
+    .dark#myBody .qFaHeader .navbar a.navbar-brand:hover {
+        color: #060606;
     }
 
     .dark#myBody .nav-fixed .navbar .navbar-brand {
