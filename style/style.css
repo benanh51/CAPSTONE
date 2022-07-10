@@ -841,10 +841,34 @@ p{
     right: 0;
     margin: 20px;
 }
-
+.imginfo__box {
+    background-color: #fb811e;
+    color: #fff;
+    position: absolute;
+    left: -85px;
+    bottom: 38px;
+    padding: 40px;
+    box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
+    min-width: 300px;
+    border-radius: 0 0 100px 0;
+    text-align: center;
+}
+.imginfo__box .imginfo__title {
+    font-size: 70px;
+    line-height: 80px;
+    color: #fff;
+    font-weight: 600;
+}
+.imginfo__box p {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2px;
+}
 /* Testimonial */
 .testimonial{
-    background-image:url(../../img/bg1.jpg) ;
+    background-image:url(../img/bg1.jpg) ;
     position: relative;
     z-index: 1;
     padding-top: 3rem ;
