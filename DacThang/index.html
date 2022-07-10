@@ -30,9 +30,10 @@
 
 <body>
     <!-- Gallery -->
-    <section class="gallery">
+    <section class="gallery ">
         <div class="container" id="lightGallery">
-            <div class="row">
+
+            <div class="row homePage">
                 <div class="col-6 col-lg-3 gallery__img">
                     <div class="gallery__item">
                         <div class="gallery__title">
@@ -127,8 +128,8 @@
                         </a>
                     </div>
                 </div>
-
             </div>
+        </div>
         </div>
     </section>
     <!-- Testimonial -->
@@ -167,7 +168,7 @@
                     <div class="item">
                         <div class="testimonial__item">
                             <div class="row align-items-center">
-                                <div class="col-3 testimonial__topic">
+                                <div class="col-md-3 testimonial__topic">
                                     <a href="#url" class="testi-img">
                                         <img src="../img/testi2.jpg" alt="" class="radius-image img-fluid">
                                     </a>
@@ -176,7 +177,7 @@
                                         <p>Customer</p>
                                     </div>
                                 </div>
-                                <div class="col-9 testimonial__text">
+                                <div class="col-md-9 testimonial__text">
                                     <span class="fa fa-quote-left"></span>
                                     <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint mollitia odit
                                         minus,
@@ -194,7 +195,7 @@
                     <div class="item">
                         <div class="testimonial__item">
                             <div class="row align-items-center">
-                                <div class="col-3 testimonial__topic">
+                                <div class="col-md-3 testimonial__topic">
                                     <a href="#url" class="testi-img">
                                         <img src="../img/testi3.jpg" alt="" class="radius-image img-fluid">
                                     </a>
@@ -203,7 +204,7 @@
                                         <p>Customer</p>
                                     </div>
                                 </div>
-                                <div class="col-9 testimonial__text">
+                                <div class="col-md-9 testimonial__text">
                                     <span class="fa fa-quote-left"></span>
                                     <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint mollitia odit
                                         minus,
@@ -216,9 +217,7 @@
 
                             </div>
                         </div>
-
                     </div>
-                </div>
     </section>
 
     <section class="footer">
@@ -345,25 +344,25 @@
 
     <!-- BackToTop -->
     <script>
-       
+
         window.onscroll = function () {
-          scrollFunction()
+            scrollFunction()
         };
-      
+
         function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("movetop").style.display = "block";
-          } else {
-            document.getElementById("movetop").style.display = "none";
-          }
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
         }
-      
-     
+
+
         function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
-      </script>
+    </script>
 
 </body>
 

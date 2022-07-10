@@ -17,7 +17,10 @@
     padding: 3rem 0;
     margin-bottom: 3rem;
 }
-
+.homePage{
+    margin-left: 0;
+    margin-right: 0;
+}
 .gallery__item{
     position: relative;
 }
@@ -476,3 +479,5 @@
         margin-top: 3rem;
     }
 }
+
+
