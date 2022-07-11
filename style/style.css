@@ -698,11 +698,13 @@ p{
     /* box-shadow: -1px 2px 12px -9px var(--box-shadow); */
    
   }
-  
-  .features15-para h6 {
-    font-weight: 600;
-    color: var(--secondary-color);
-  }
+  .grids_info span.fa {
+    font-size: 20px;
+    color: #fb811e;
+}
+.dark#myBody .detail h4{
+    color: #000;
+}
   
   .index-block4 .features15-col-text {
     margin-top: 30px;
